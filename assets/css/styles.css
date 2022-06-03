@@ -16,7 +16,7 @@
   
   .red {
     background: indianred;
-  /* }
+   }
   @media screen and (max-width: 600px) {
     .topnav.responsive {position: relative;}
     .topnav.responsive a.icon {
@@ -30,4 +30,4 @@
       display: block;
       text-align: left;
     }
-  } */
+  } 
