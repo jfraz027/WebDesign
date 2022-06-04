@@ -1,27 +1,35 @@
 # WebDesign
-For this homework assignment, you'll create a website by using visualizations that were created in your Python-APIs homework, or you can use the [weather data](Resources/cities.csv) provided.
+For this project, a website was created using visualizations that were developed in a Python-APIs analysis using the provided cities.csv.
 
-As you build this dashboard, you'll create individual pages for each plot and a way to navigate between them. These pages will contain the visualizations and des. You will also build a landing page to provide a comparison of all the plots, along with another page to present the data used to build them.
+In building the dashboard, create individual pages for each plot and a way to navigate between them. These pages contain the visualizations. There is also a landing page to provide a comparison of all the plots, along with another page to present the data used to build them.
 
 ### Website Requirements
 
-For reference, review the following ["Screenshots" section](#screenshots). 
-
 The website must consist of seven pages in total, including:
 
-* A [landing page](#landing-page) containing the following elements:
+![image](https://user-images.githubusercontent.com/99145651/171969143-7210aa6f-b8a7-4533-bd83-c19b0580a126.png)
+
+* Containing the following elements:
 
   * An explanation of the project
 
-  * Links to each visualizations page. There should be a sidebar containing preview images of each plot. Clicking an image should take the user to that visualization.
+  * Links to each visualizations page with a sidebar containing preview images of each plot. Clicking an image takes the user to that visualization.
 
-* Four [visualization pages](#visualization-pages), stored in the `visualizations` folder, each with the following elements:
+* Four pages
+ 
+ ![image](https://user-images.githubusercontent.com/99145651/171969282-0564209c-d5a0-429d-8c56-20e19db41aaf.png)
+ ![image](https://user-images.githubusercontent.com/99145651/171969301-bfefcfcc-26c9-4dda-9c56-7dc1645556e1.png)
+ ![image](https://user-images.githubusercontent.com/99145651/171969313-15210064-6d07-4670-91bd-aec78bdb5f8f.png)
+ ![image](https://user-images.githubusercontent.com/99145651/171969326-9947eb7e-8091-46e3-a8bc-9e0a84ea06f5.png)
 
-  * A descriptive title and heading tag.
+ * A descriptive title and heading tag.
 
-  * The plot or visualization for the selected comparison (latitude vs: max temperature, humidity, cloudiness, or wind speed). The images displayed on these pages should be stored in the `assets/images` folder.
+  * The plot or visualization for the selected comparison (latitude vs: max temperature, humidity, cloudiness, or wind speed). 
 
   * A paragraph describing the plot and its significance.
+ 
+  ![image](https://user-images.githubusercontent.com/99145651/171969243-e3ab4cb2-00d1-4222-818b-3a848f99127c.png)
+ 
 
 * A ["Comparisons" page](#comparisons-page) that does the following:
 
@@ -31,90 +39,83 @@ The website must consist of seven pages in total, including:
 
     * The grid must be two visualizations across medium and large screens, and it must be one visualization across on extra-small or small screens.
 
+![image](https://user-images.githubusercontent.com/99145651/171969851-5c58c335-600a-453c-80b2-64a744a16486.png)
+
+
 * A ["Data" page](#data-page) that displays a responsive table containing the data used in the visualizations.
 
-  * The table must be a Bootstrap table component. Refer to the [Bootstrap documentation](https://getbootstrap.com/docs/4.3/content/tables/#responsive-tables) for how to use responsive tables. 
+  * The table must be a Bootstrap table component. 
 
-  * The data must come from exporting the `.csv` file as HTML or by converting it to HTML. Try using a tool that you already know: Pandas. Pandas has a method, appropriately called `to_html`, that allows you to generate an HTML table from a Pandas DataFrame. To learn more, review the [documentation](https://pandas.pydata.org/pandas-docs/version/0.17.0/generated/pandas.DataFrame.to_html.html).
+  * The data must come from exporting the `.csv` file as HTML or by converting it to HTML. 
+
+
+![image](https://user-images.githubusercontent.com/99145651/171969890-3bbb4c40-5ad1-48d6-b84f-011134a706b2.png)
+
 
 At the top of every page, the website must have a navigation menu with the following elements:
 
-* It should have the name of the site on the left of the navigation bar, allowing users to return to the landing page from any page.
+* Name of the site on the left of the navigation bar to return to the landing page from any page.
 
-* It should contain a dropdown menu on the right of the navigation bar, named "Plots," to provide links to each individual visualization page.
+* Dropdown menu on the right of the navigation bar, named "Plots," to provide links to each individual visualization page.
 
-* It should provide two more text links on the right: "Comparisons," which links to the comparisons page, and "Data," which links to the data page.
+* Text links on the right: "Comparisons," which links to the comparisons page, and "Data," which links to the data page.
 
-* It should be responsive (using media queries). The navigation bar must be similar to the screenshots in the ["Navigation Menu" section](#navigation-menu) (notice the background color change).
+* Be responsive (using media queries). 
 
-Finally, the website must be deployed to GitHub Pages.
+![image](https://user-images.githubusercontent.com/99145651/171969914-fe5ad463-4c8b-4998-ab99-918a042b9ef7.png)
 
-Once finished, submit links to 1) the deployed app and 2) the GitHub repository.
-
-Ensure your repository has regular commits and a descriptive `README.md` file.
 
 ### Considerations
 
-* You may use the weather data you collected for the WeatherPy section of your Python-APIs Homework, or you may use the included [cities dataset](Resources/cities.csv) and pull the images from the [assets folder](Resources/assets).
+* Use Bootstrap and include
+* Bootstrap `navbar` component for the header on every page, 
+* Bootstrap table component for the data page, 
+* Bootstrap grid for responsiveness on the comparison page.
+* Bootstrap and/or `@media` for the navigation bar.
 
-* You must use Bootstrap. This includes using the Bootstrap `navbar` component for the header on every page, the Bootstrap table component for the data page, and the Bootstrap grid for responsiveness on the comparison page.
-
-* You must deploy your website to GitHub Pages, with the website working on a live, publicly accessible URL as a result.
-
-* Make sure to use a CSS media query that uses Bootstrap and/or `@media` for the navigation bar.
-
-* Make sure that your website works at all window widths or sizes.
-
-* Feel free to take some liberty in the visual aspects, but keep the  core functionality the same.
-
-### Bonus
-
-For an extra challenge, try the following: 
-
-* Use a different dataset! The requirements just described still hold, but make it your own.
-
-* Use a Bootstrap theme to customize your website. You can use a tool like [Bootswatch](https://bootswatch.com/), but make sure you also meet all of the requirements listed earlier.
-
-* Add extra visualizations. 
-* Use meaningful glyphicons next to the links in the header.
-
-* Have visualization navigation on every visualization page with an active state, as in the following screenshots.
+* Website works at all window widths or sizes.
 
 ### Screenshots
 
-This section contains screenshots of each page that must be built, at varying screen widths. These are intended as a guide; you can meet the requirements without having the pages match the following images exactly.
+This section contains screenshots of each page that must be built, at varying screen widths. 
 
 #### <a id="landing-page"></a>Landing page
 
 Large screen:
 
-![Landing page large screen](Images/landingResize.png)
+![image](https://user-images.githubusercontent.com/99145651/171970082-df8202ce-5ab3-4196-9f02-2dcd0494ec17.png)
+
 
 Small screen:
 
-![Landing page small screen](Images/landing-sm.png)
+![image](https://user-images.githubusercontent.com/99145651/171970116-0aa54bbb-ecf3-41ed-ab05-453d358d2757.png)
+
 ￼
 
 #### <a id="comparisons-page"></a>Comparisons page
 
 Large screen:
 
-![comparison page large screen](Images/comparison-lg.png)
+![image](https://user-images.githubusercontent.com/99145651/171970179-647d1a34-f861-4774-9918-87a953ec598c.png)
+
 
 Small screen:
 
-![comparison page small screen](Images/comparison-sm.png)
+![image](https://user-images.githubusercontent.com/99145651/171970212-4af1c231-2d69-4289-a358-77c6353c422b.png)
+
 
 #### <a id="data-page"></a>Data page
 
 Large screen:
 
-![data page large screen](Images/data-lg.png)
+![image](https://user-images.githubusercontent.com/99145651/171970273-1f0fe3c8-45f3-4383-afeb-af0042942754.png)
+
 
 
 Small screen:
 
-![data page small screen](Images/data-sm.png)
+![image](https://user-images.githubusercontent.com/99145651/171970327-ce719e88-173d-4061-a6a8-8ecd2037a320.png)
+
 
 #### <a id="visualization-pages"></a>Visualization pages
 
@@ -126,12 +127,15 @@ Large screen:
 
 Small screen:
 
-![visualize page small screen](Images/visualize-sm.png)
+![image](https://user-images.githubusercontent.com/99145651/171970434-1a3ff9a7-e3f3-4fd0-acd4-650faea20986.png)
+
 
 #### <a id="navigation-menu"></a>Navigation menu
 
 Large screen:
+
 ![nav menu large screen](Images/nav-lg.png)
 
 Small screen:
-![nav menu small screen](Images/nav-sm.png)
+
+![image](https://user-images.githubusercontent.com/99145651/171970478-04b5b1e7-900c-4cf3-b49f-fd5e7f10cff2.png)
